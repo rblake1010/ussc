@@ -1,0 +1,1 @@
+|a:5:{s:14:"derivativePath";s:85:"/var/www/vhosts/ussalescorp.com/httpdocs/gallery/g2data/cache/derivative/5/0/5000.dat";s:14:"derivativeType";i:1;s:8:"mimeType";s:10:"image/jpeg";s:8:"parentId";i:4999;s:14:"pseudoFileName";s:25:"LG_s in stockroom _2_.jpg";}

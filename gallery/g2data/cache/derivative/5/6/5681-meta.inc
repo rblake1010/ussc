@@ -1,0 +1,1 @@
+|a:5:{s:14:"derivativePath";s:85:"/var/www/vhosts/ussalescorp.com/httpdocs/gallery/g2data/cache/derivative/5/6/5681.dat";s:14:"derivativeType";i:1;s:8:"mimeType";s:10:"image/jpeg";s:8:"parentId";i:5680;s:14:"pseudoFileName";s:41:"LG 47 WALL DISPLAY FTEUSTIS 8-12-2010.jpg";}

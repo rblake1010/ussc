@@ -1,0 +1,1 @@
+|a:5:{s:14:"derivativePath";s:85:"/var/www/vhosts/ussalescorp.com/httpdocs/gallery/g2data/cache/derivative/2/6/2682.dat";s:14:"derivativeType";i:1;s:8:"mimeType";s:10:"image/jpeg";s:8:"parentId";i:2681;s:14:"pseudoFileName";s:45:"Ft_ Benning_ weekly LG report 6-16-10 _2_.jpg";}

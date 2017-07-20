@@ -1,0 +1,23 @@
+# -FrontPage-
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName ussalescorp.com
+AuthUserFile /services/webpages/u/s/ussalescorp.com/public/_vti_pvt/service.pwd
+AuthGroupFile /services/webpages/u/s/ussalescorp.com/public/_vti_pvt/service.grp
+php_value error_reporting Off
+php_value display_errors Off
+
+
+Action php4-cgi /cgi-bin/php4.cgi
+AddHandler php4-cgi .php
+

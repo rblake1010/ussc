@@ -1,0 +1,1 @@
+|a:5:{s:14:"derivativePath";s:83:"/var/www/vhosts/ussalescorp.com/httpdocs/gallery/g2data/cache/derivative/0/6/68.dat";s:14:"derivativeType";i:2;s:8:"mimeType";s:10:"image/jpeg";s:8:"parentId";i:67;s:14:"pseudoFileName";s:24:"LC Lindt 2-14-09 006.jpg";}

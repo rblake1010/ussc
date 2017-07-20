@@ -1,0 +1,1 @@
+|a:5:{s:14:"derivativePath";s:85:"/var/www/vhosts/ussalescorp.com/httpdocs/gallery/g2data/cache/derivative/5/4/5455.dat";s:14:"derivativeType";i:1;s:8:"mimeType";s:10:"image/jpeg";s:8:"parentId";i:5453;s:14:"pseudoFileName";s:35:"29 PLAMS LG TV STACKOUT 9-23-10.jpg";}

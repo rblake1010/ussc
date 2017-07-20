@@ -1,0 +1,1 @@
+|a:5:{s:14:"derivativePath";s:85:"/var/www/vhosts/ussalescorp.com/httpdocs/gallery/g2data/cache/derivative/2/6/2637.dat";s:14:"derivativeType";i:2;s:8:"mimeType";s:10:"image/jpeg";s:8:"parentId";i:2636;s:14:"pseudoFileName";s:20:"lg yoko 6-16 001.jpg";}

@@ -1,0 +1,1 @@
+|a:5:{s:14:"derivativePath";s:85:"/var/www/vhosts/ussalescorp.com/httpdocs/gallery/g2data/cache/derivative/5/2/5281.dat";s:14:"derivativeType";i:2;s:8:"mimeType";s:9:"image/gif";s:8:"parentId";i:5279;s:14:"pseudoFileName";s:24:"Motorola no tag line.GIF";}

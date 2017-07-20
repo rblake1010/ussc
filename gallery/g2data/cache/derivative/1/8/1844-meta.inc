@@ -1,0 +1,1 @@
+|a:5:{s:14:"derivativePath";s:85:"/var/www/vhosts/ussalescorp.com/httpdocs/gallery/g2data/cache/derivative/1/8/1844.dat";s:14:"derivativeType";i:2;s:8:"mimeType";s:10:"image/jpeg";s:8:"parentId";i:1843;s:14:"pseudoFileName";s:21:"LG 55 endcap LAFB.jpg";}

@@ -1,0 +1,1 @@
+<?php function GalleryFastDownload() { return $GLOBALS['gallery']->fastDownload('derivative/1/4/1453.dat', 'Garmin Hueneme Bee Fit #3.jpg', 'Tue, 21 Jun 2011 22:02:15 GMT', 'image/jpeg', 46531);} ?>

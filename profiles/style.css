@@ -1,0 +1,53 @@
+body {
+	text-align: center;
+}
+fieldset {
+ 	border: 0px;
+}
+* {
+	font-family: tahoma;
+	font-size: 93%;
+	color: #000;
+}
+.container {
+ 	padding: 2px;
+ 	text-align: left;
+}
+.navItem1 {
+ 	padding: 3px;
+ 	background-color: #dedede;
+ 	color: #000;
+ 	text-align: left;
+ 	border-top: 1px solid #888;
+ 	border-bottom: 1px solid #888;
+}
+.text {
+ 	padding: 4px;
+ 	background-color: #fefefe;
+ 	color: #000;
+ 	text-align: left;
+ 	font-weight: normal;
+ 	border-top: 1px solid #888;
+ 	border-bottom: 1px solid #888;
+
+}
+.navItem2 {
+ 	padding: 3px;
+ 	background-color: #7faac2;
+ 	color: #000;
+ 	text-align: left;
+ 	border-top: 1px solid #888;
+ 	border-bottom: 1px solid #888;
+}
+.navItem3 {
+ 	padding: 3px;
+ 	background-color: #dedede;
+ 	color: #000;
+ 	text-align: left;
+ 	border-top: 1px solid #888;
+ 	border-bottom: 1px solid #888;
+}
+a {
+ 	color: #000;
+ 	text-decoration: underline;
+}

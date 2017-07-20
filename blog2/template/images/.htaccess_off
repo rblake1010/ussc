@@ -1,0 +1,9 @@
+AuthName "ussalescorp.com"
+AuthType Basic
+AuthUserFile "/services/webpages/u/s/ussalescorp.com/public/blog2/template/images/.htpasswd"
+<Limit GET POST PUT>
+# require valid-user
+# Order deny,allow
+# Deny from all
+# Allow from all
+</Limit>

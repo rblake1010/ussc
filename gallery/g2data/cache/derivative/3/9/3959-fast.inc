@@ -1,0 +1,1 @@
+<?php function GalleryFastDownload() { return $GLOBALS['gallery']->fastDownload('derivative/3/9/3959.dat', 'nuvi 1350 demo blue.jpg', 'Tue, 21 Jun 2011 22:02:53 GMT', 'image/jpeg', 43786);} ?>

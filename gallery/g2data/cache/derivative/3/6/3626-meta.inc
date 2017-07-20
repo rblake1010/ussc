@@ -1,0 +1,1 @@
+|a:5:{s:14:"derivativePath";s:85:"/var/www/vhosts/ussalescorp.com/httpdocs/gallery/g2data/cache/derivative/3/6/3626.dat";s:14:"derivativeType";i:1;s:8:"mimeType";s:10:"image/jpeg";s:8:"parentId";i:3625;s:14:"pseudoFileName";s:41:"Charleston Navy #236 Wahl _1_ 6-16-10.jpg";}

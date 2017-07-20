@@ -1,0 +1,1 @@
+|a:5:{s:14:"derivativePath";s:85:"/var/www/vhosts/ussalescorp.com/httpdocs/gallery/g2data/cache/derivative/4/1/4119.dat";s:14:"derivativeType";i:2;s:8:"mimeType";s:10:"image/jpeg";s:8:"parentId";i:4118;s:14:"pseudoFileName";s:25:"29 PALMS TV-1 6-23-10.jpg";}

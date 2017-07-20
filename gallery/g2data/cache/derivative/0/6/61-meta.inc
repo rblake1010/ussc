@@ -1,0 +1,1 @@
+|a:5:{s:14:"derivativePath";s:83:"/var/www/vhosts/ussalescorp.com/httpdocs/gallery/g2data/cache/derivative/0/6/61.dat";s:14:"derivativeType";i:1;s:8:"mimeType";s:9:"image/gif";s:8:"parentId";i:57;s:14:"pseudoFileName";s:5:"LINDT";}

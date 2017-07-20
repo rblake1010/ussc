@@ -1,0 +1,1 @@
+|a:5:{s:14:"derivativePath";s:84:"/var/www/vhosts/ussalescorp.com/httpdocs/gallery/g2data/cache/derivative/5/4/543.dat";s:14:"derivativeType";i:1;s:8:"mimeType";s:10:"image/jpeg";s:8:"parentId";i:542;s:14:"pseudoFileName";s:31:"Hueneme G_O_ 3_12_10 LG END.JPG";}

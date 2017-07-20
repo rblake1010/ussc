@@ -1,0 +1,1 @@
+<?php function GalleryFastDownload() { return $GLOBALS['gallery']->fastDownload('derivative/5/2/5281.dat', 'Motorola no tag line.GIF', 'Tue, 21 Jun 2011 22:03:44 GMT', 'image/gif', 5587);} ?>

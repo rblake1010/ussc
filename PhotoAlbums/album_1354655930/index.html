@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>LG</title>
+
+<script type="text/javascript">
+<!--
+// Translations
+var TXT_NEXT = "Next";
+var TXT_BACK = "Back";
+var TXT_CLOSE = "Close";
+
+/*function changeImg(img, obj)
+{
+
+	var preLoad = new Image();
+	preLoad.src = img;	
+//	preLoad.onLoad="changeData('"+obj.title+"','"+ obj.id+"','"+preLoad.src+"')";
+//	preLoad.onLoad="alert('!!!!');";
+//	document.getElementById('mainImg').src = img;
+	changeData(obj.title, obj.id, preLoad.src)
+	return false;
+}
+function changeData(title, id, src)
+{
+	document.getElementById('photo_title').innerHTML = title;
+	document.getElementById('photo_desc').innerHTML = document.getElementById(id).getAttribute('pdesc');
+	document.getElementById('mainImg').src = src;
+}
+*/
+function load()
+{
+	h= screen.availHeight - 250 - document.getElementById('photoAlbumHeader').clientHeight;
+	document.getElementById('thumb_imgs').style.maxHeight = h + "px";
+}
+
+
+//-->
+</script>
+<!--
+<script type="text/javascript" src="jquery-compressed.js"></script>
+<script type="text/javascript" src="thickbox.js"></script>
+-->
+
+<!-- <link rel="stylesheet" href="thickbox.css" type="text/css" media="screen" /> -->
+<link rel="stylesheet" href="borders.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="comments.css" type="text/css" media="screen" /> 
+
+<style type="text/css">
+<!--
+body
+{
+	background: #ccffff;
+	color: #000000;
+}
+
+BUTTON.darkButton
+{
+    background: #63637C; /* #302F55; */
+    color: #fff;
+    font: 11px "lucida grande",arial,helvetica,sans-serif;
+    border: 1px #D1DADE solid;
+    cursor: pointer;
+    float: center;
+    padding: 2px 8px 3px 8px;
+    margin: 2px;
+    -moz-border-radius: 4px;
+}
+
+BUTTON.darkButton:hover
+{
+    background: #111;
+}
+
+
+
+img.thumbNail
+{
+	background: #fff;
+	border: 1px solid #888;
+	padding: 6px;
+	margin: 0px 10px 10px 10px;
+	float: none;
+	clear: both;
+}
+
+div#thumbBox
+{
+/*
+//	width: 80%;
+//	margin-left: 10%;
+//	margin-right: 10%;
+//	margin-bottom: 40px;
+	text-align: center;
+//	float: none;
+//	clear: both;
+*/
+}
+
+div#photoAlbumHeader   
+{
+	padding: 5px;
+	margin: 0px 5px 15px 10px;
+	border-bottom: 1px solid #000000;
+	text-align: right;
+	font-weight: bold;
+}
+
+div#pageLinks
+{
+	margin: 5px 10px 10px 5px;
+	padding: 8px;
+	text-align: center;
+	font-family: "helvetica neue",arial,helvetica,sans-serif;
+	font-size: 12px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+
+A.currentPage
+{
+	background: #000000;
+	color:  #ccffff;
+	text-decoration: none;
+	padding: 3px 7px 3px 7px;
+	border: 1px solid #ccffff;
+}
+
+A.pageLink
+{
+	color: #000000;
+	background: #ccffff;
+	text-decoration: none;
+	padding: 3px 7px 3px 7px;
+	border: 1px outset #000000;
+	border-top-width: 2px;
+}
+
+A.pageLink:hover
+{
+	background: #000000;
+        color: #ccffff;	
+}
+
+/*.photoAlbumTitle
+{
+	font-family: "helvetica neue",arial,helvetica,sans-serif;
+	margin: 3px 0px 3px 0px;
+}
+*/
+.photoAlbumTitle
+{
+//	font-family: "helvetica neue",arial,helvetica,sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 3px 0px 3px 0px;
+
+
+}
+.photoAlbumDescription
+{
+//	font-family: "helvetica neue",arial,helvetica,sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 3px 0px 3px 0px;
+
+}
+
+.footerDiv
+{
+	float: ;
+}
+
+#photo_title
+{
+	align: center; 
+	font-weight:bold;  
+	color:#000000; 
+}
+#photo_desc
+{
+	align: center;  
+	font-weight:bold;  
+	color:#000000; 
+}
+
+#PR_overlay {
+
+	position: absolute;
+
+	z-index:100;
+
+	top: 0px;
+
+	left: 0px;
+
+	background-color:#000;
+
+	filter:alpha(opacity=60);
+
+	-moz-opacity: 0.6;
+
+	opacity: 0.6;
+
+	display: none;
+
+}
+
+.commentsBottomColor {
+border-bottom-color: #000000;
+}
+
+#PR_window TD 
+{
+	border-bottom-color: #000000;
+}
+
+.PR_window_css {
+
+	position: absolute;
+
+	background: #ffffff;
+
+	z-index: 102;
+
+	color:#000000;
+
+	display: none;
+/*	visibility: hidden;*/
+
+	border: 4px solid #525252;
+
+	text-align:left;
+	top: 20px;
+	width: 900px;
+	height: 750px;
+	overflow: auto;
+	
+
+}
+
+-->
+</style>
+
+
+<script src="slideshow.js" type="text/javascript"></script>
+<script type="text/javascript" src="%COMMENTS_SCRIPT_FILE%"></script>
+
+</head>
+
+<body onload="load(); fillImgAray();" style="height: 100%" > 
+
+
+<!-- <table style="width: 100%; border: 0; cellspacing: 0; cellpadding: 0">
+  <tr>
+    <td>
+<div id="photoAlbumHeader">
+	<h2 class="photoAlbumTitle">LG</h2>
+	<h4 class="photoAlbumTitle"></h4>
+</div>
+    
+    
+    </td>
+  </tr>
+</table>
+-->
+<table style="width: 100%; height: 100%;  border: 0; cellspacing: 0; cellpadding: 0">
+
+<tr >
+
+<td colspan="2">
+<table style="width: 100%; border: 0; cellspacing: 0; cellpadding: 0">
+  <tr>
+    <td>
+<div id="photoAlbumHeader">
+    <span style="font-size: 0.82em" class="photoAlbumTitle">LG </span><br/>
+    <span style="font-size: 0.82em"  class="photoAlbumDescription"></span>
+
+</div>
+    
+    
+    </td>
+  </tr>
+</table>
+
+</td>
+
+
+</tr>
+
+
+
+  <tr >
+    <td style="width: 200px" valign="top" >
+    
+<div style="overflow-y: auto; overflow-x: hidden;  height: 98%; width: 249px; align: center; margin-left:auto; margin-right:auto;" id="thumb_imgs"> 
+<table>
+<tr><td><div class="footerDiv" style=""><a href="LG_Logos_LG_c_hor_tag_eps_hi-res.png" onclick="goPhoto(0); return false;" title="LG Electronics" rel="gallery" id="aimg_0"><img class="thumbNail" src="thumb_LG_Logos_LG_c_hor_tag_eps_hi-res.png" alt="LG_Logos_LG_c_hor_tag_eps_hi-res.png" style="margin-top: 0px; margin-bottom: 0px; " title="LG_Logos_LG_c_hor_tag_eps_hi-res.png" /></a></div></td></tr><tr><td><div class="footerDiv" style=""><a href="AAFES_2012_PZ_Expo.jpg" onclick="goPhoto(1); return false;" title="AAFES Powerzone Seminar 2012" rel="gallery" id="aimg_1"><img class="thumbNail" src="thumb_AAFES_2012_PZ_Expo.jpg" alt="No tag" style="margin-top: 0px; margin-bottom: 0px; " title="No tag" /></a></div></td></tr><tr><td><div class="footerDiv" style=""><a href="AAFES_2012_PZ_Expo4.jpg" onclick="goPhoto(2); return false;" title="AAFES Powerzone Seminar 2012" rel="gallery" id="aimg_2"><img class="thumbNail" src="thumb_AAFES_2012_PZ_Expo4.jpg" alt="AAFES_2012_PZ_Expo4.jpg" style="margin-top: 0px; margin-bottom: 0px; " title="AAFES_2012_PZ_Expo4.jpg" /></a></div></td></tr><tr><td><div class="footerDiv" style=""><a href="AAFES_2012_PZ_Expo6.jpg" onclick="goPhoto(3); return false;" title="AAFES Powerzone Seminar 2012" rel="gallery" id="aimg_3"><img class="thumbNail" src="thumb_AAFES_2012_PZ_Expo6.jpg" alt="AAFES_2012_PZ_Expo6.jpg" style="margin-top: 0px; margin-bottom: 0px; " title="AAFES_2012_PZ_Expo6.jpg" /></a></div></td></tr><tr><td><div class="footerDiv" style=""><a href="AAFES_2012_PZ_Expo8.jpg" onclick="goPhoto(4); return false;" title="AAFES Powerzone Seminar 2012" rel="gallery" id="aimg_4"><img class="thumbNail" src="thumb_AAFES_2012_PZ_Expo8.jpg" alt="AAFES_2012_PZ_Expo8.jpg" style="margin-top: 0px; margin-bottom: 0px; " title="AAFES_2012_PZ_Expo8.jpg" /></a></div></td></tr><tr><td><div class="footerDiv" style=""><a href="IMG_0681.jpg" onclick="goPhoto(5); return false;" title="AAFES Powerzone Seminar 2012" rel="gallery" id="aimg_5"><img class="thumbNail" src="thumb_IMG_0681.jpg" alt="IMG_0681.jpg" style="margin-top: 0px; margin-bottom: 0px; " title="IMG_0681.jpg" /></a></div></td></tr></table><script type="text/javascript">var arrayDesc = new Array();
+arrayDesc[0] = "<br>";
+arrayDesc[1] = "LG AAFES Powerzone 2012 entry<br>";
+arrayDesc[2] = "<br>";
+arrayDesc[3] = "<br>";
+arrayDesc[4] = "<br>";
+arrayDesc[5] = "<br>";
+var arrayAlt = new Array();
+arrayAlt[0] = "LG_Logos_LG_c_hor_tag_eps_hi-res.png<br>";
+arrayAlt[1] = "No tag<br>";
+arrayAlt[2] = "AAFES_2012_PZ_Expo4.jpg<br>";
+arrayAlt[3] = "AAFES_2012_PZ_Expo6.jpg<br>";
+arrayAlt[4] = "AAFES_2012_PZ_Expo8.jpg<br>";
+arrayAlt[5] = "IMG_0681.jpg<br>";
+</script>
+</div>
+    
+    </td>
+        <td style="width: 86%" align="center" valign="top" >
+
+	<div id="photoView" style="float: center; "> <!--width: 800px;-->
+<div id="buttonsBar" style="text-align: center; width: auto;">
+<button class="darkButton" onclick="goPhoto('prev')" id="buttPrev" style="visibility: hidden;"> &lt;&lt; </button>&nbsp;
+
+<button class="darkButton" onclick="runSlideShow(true)" id="startSSButton">Start Slideshow</button>
+<button class="darkButton" onclick="stopSlideShow(true)" style="display: none;" id="stopSSButton">Stop Slideshow</button>
+&nbsp;
+<button class="darkButton" onclick="goPhoto('next')" id="buttNext"> >> </button>
+</div>
+
+<!--<button class="darkButton" onClick="runSlideShow(true)" >Start Slideshow</button>
+<button class="darkButton" onClick="stopSlideShow(true)" >Stop Slideshow</button>
+-->
+
+<div id="thumbBox" style="padding-bottom:15px; width: auto; float: center;">
+	<div id="valign" style="width: 800px; margin-right: auto; margin-left: auto">
+	<table class="table_main" cellspacing="0" style="margin-top:12px; background-color: white; ">
+				<tr>
+					<td class="img" align="center" style="padding: 0 20">
+		<br/>
+		<table border="0" >
+			<tr>
+				<td align="center">
+					<a href="javascript:void(0)" onclick="goPhoto('next')" id="fullPhoto"  style="border:0px; ">
+						
+					<div style="*padding-left:10px;*padding-right:10px"><img src="LG_Logos_LG_c_hor_tag_eps_hi-res.png" id='mainImg' style="border: 1px solid #000000" alt="Image"/></div>
+					
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<br/>
+					<div style="text-align:left"><span id="photo_title"  style="font-weight:bold;  color: #7C7C7C; font-size: 11pt;"></span></div>
+					<div style="text-align:left"><span id="photo_desc" style="color:#000000; font-size: 10pt;"></span></div><br/>
+				</td>
+			</tr>
+		</table>
+					
+					</td>
+				</tr>
+			</table>
+</div>
+
+</div>
+
+</div>
+
+
+    
+    </td>
+
+</tr>
+</table>
+<!-- <div id="pageLinks">
+	
+</div>
+-->
+<div style="font-size: 0.63em; text-align: center">&copy;2013</div>
+</body>
+</html>
