@@ -1539,3 +1539,24 @@ p2 {
     left: 10px;
 }
 
+.aafes{
+	width: 308px;
+	height: 99px;
+	display: inline-block;
+	background-image: url("../images/AAFESbg.png");
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	margin:0 10px 15px 0px;
+}
+
+.aafes p {
+	text-align: center;
+    font-family: times new roman;
+    color: #e80505;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 27px;
+    text-transform: uppercase;
+}
+
