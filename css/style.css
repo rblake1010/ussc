@@ -1560,3 +1560,10 @@ p2 {
     text-transform: uppercase;
 }
 
+.ourcustomerImages{
+	margin:0px 0px 30px 0px;
+}
+
+.ourcustomerImages img {
+    margin: 0px 15px 10px 0px;
+}
