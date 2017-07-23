@@ -219,6 +219,8 @@ a {
 
 div.lightBlue {
 	border:2px solid lightblue;
+	padding:3px;
+	float: left;
 }
 
 span.lightBlue {
@@ -226,6 +228,7 @@ span.lightBlue {
   overflow: hidden;
   float: left;
   margin-right: 8px;
+  padding:3px 0px;
 }
 
 
